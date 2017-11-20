@@ -17,27 +17,27 @@ public class SuccessKilledDaoTest {
 
 	@Test
 	public void testInsertSuccessKilled() {
-		long seckillId = 1000L;
-		long userPhone = 13588056736L;
-		int insertCount = successKilledDao.insertSuccessKilled(seckillId, userPhone);
-		System.out.println(insertCount);
+//		long seckillId = 1000L;
+//		long userPhone = 13588056736L;
+//		int insertCount = successKilledDao.insertSuccessKilled(seckillId, userPhone);
+//		System.out.println(insertCount);
 	}
 
 	@Test
 	public void testQueryByIdWithSeckill() {
-		long seckillId = 1000L;
-		long userPhone = 13588056736L;
-		SuccessKilled successKilled = successKilledDao.queryByIdWithSeckill(seckillId, userPhone);
-		System.out.println(successKilled);
-		System.out.println(successKilled.getSecKill());
+//		long seckillId = 1000L;
+//		long userPhone = 13588056736L;
+//		SuccessKilled successKilled = successKilledDao.queryByIdWithSeckill(seckillId, userPhone);
+//		System.out.println(successKilled);
+//		System.out.println(successKilled.getSecKill());
 	}
 	
 	@Test
 	public void testDeleteSuccessKilled() {
-		long seckillId = 1000;
-		long userPhone = 13588056736L; 
-		int count = successKilledDao.deleteSuccessKilled(seckillId, userPhone);
-		System.out.println(count);
+//		long seckillId = 1000;
+//		long userPhone = 13588056736L; 
+//		int count = successKilledDao.deleteSuccessKilled(seckillId, userPhone);
+//		System.out.println(count);
 	}
 
 }
