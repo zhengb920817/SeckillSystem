@@ -2,6 +2,7 @@ package org.seckill.dao;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.annotations.Param;
 import org.seckill.entity.SecKill;
@@ -26,4 +27,6 @@ public interface SeckillDao {
 	 * 请求全部商品信息
 	 */
 	List<SecKill> queryAll(@Param("offset") int offset, @Param("limit") int limit);
+	
+	void killByProcedure(Map<String, Object> paramMap); 
 }

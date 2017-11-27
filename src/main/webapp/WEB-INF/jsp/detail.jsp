@@ -5,11 +5,10 @@
 <title>秒杀详情页</title>
 <%@include file="common/head.jsp"%>
 <!--  使用一下js会无法输入手机号 坑！
-	<script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
-	<script
+<script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+<script
 		src="https://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-	-->
-
+-->
 <script
 	src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
 <script
@@ -18,14 +17,10 @@
 <script
 	src="https://cdn.bootcss.com/jquery.countdown/2.1.0/jquery.countdown.min.js"></script>
  -->
-	
 <script src="http://cdn.staticfile.org/jquery.countdown/2.2.0/jquery.countdown.js"></script>
-
 <script
 	src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-
 <script src="/resource/script/seckill.js" type="text/javascript"></script>
-
 </head>
 <body>
 	<div class="container">

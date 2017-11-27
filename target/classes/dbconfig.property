@@ -1,4 +1,0 @@
-jdbc.driverClassName= com.mysql.jdbc.Driver
-jdbc.url= jdbc:mysql://127.0.0.1:3306/seckill?useUnicode=true&characterEncoding=utf8&useSSL=true
-jdbc.username=c15588e588dc756cd15e44a4552c2050
-jdbc.password=3905ef4e11ae1aa94f1d1f4603f8b5b6

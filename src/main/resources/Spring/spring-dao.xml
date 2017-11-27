@@ -31,7 +31,7 @@
 		<property name="maxPoolSize" value="30" />
 		<property name="minPoolSize" value="10" />
 		<property name="autoCommitOnClose" value="false" />
-		<property name="checkoutTimeout" value="1000" />
+		<property name="checkoutTimeout" value="10000" />
 		<property name="acquireRetryAttempts" value="2" />
 	</bean>
 	
@@ -53,5 +53,9 @@
 		<property name="basePackage" value="org.seckill.dao" />
 	</bean>
 	
+	<bean id="redisDao" class="org.seckill.dao.cache.RedisDao">
+		<constructor-arg index="0" value="${redis.host}"/>
+		<constructor-arg index="1" value="${redis.port}"/>
+	</bean>
 	
 </beans>

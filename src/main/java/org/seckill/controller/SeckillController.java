@@ -31,6 +31,9 @@ public class SeckillController {
 	@Autowired
 	private SeckillService seckillService;
 
+	/*
+	 * 获取秒杀商品列表
+	 */
 	@RequestMapping(path = "/list", method = RequestMethod.GET)
 	public String getSeckillList(Model model) {
 
@@ -39,6 +42,9 @@ public class SeckillController {
 		return "list";
 	}
 
+	/*
+	 * 获取产品详情
+	 */
 	@RequestMapping(path = "/{seckillId}/detail", method = RequestMethod.GET)
 	public String getDetail(@PathVariable("seckillId") Long seckillId, Model model) {
 
@@ -56,6 +62,9 @@ public class SeckillController {
 		return "detail";
 	}
 
+	/*
+	 * 获取秒杀地址
+	 */
 	@RequestMapping(path = "/{seckillId}/exposer", method = RequestMethod.POST, 
 			produces = "application/json;charset=UTF-8")
 	@ResponseBody
@@ -73,6 +82,9 @@ public class SeckillController {
 		return result;
 	}
 
+	/*
+	 * 执行秒杀
+	 */
 	@RequestMapping(path = "/{seckillId}/{md5}/excution", method = {RequestMethod.POST,RequestMethod.GET},
 			produces = "application/json;charset=UTF-8")
 	@ResponseBody
@@ -86,7 +98,8 @@ public class SeckillController {
 		}
 		
 		try {
-			SeckillExecution execution = seckillService.executeSeckill(seckillId, userPhone, md5);
+			//SeckillExecution execution = seckillService.executeSeckill(seckillId, userPhone, md5);
+			SeckillExecution execution = seckillService.executeSeckillProcedure(seckillId, userPhone, md5);
 			return new SeckillResult<SeckillExecution>(true, execution);
 		} 
 		catch(RepeatKillException e1) {
@@ -105,6 +118,9 @@ public class SeckillController {
 		}
 	}
 	
+	/*
+	 * 获取系统时间
+	 */
 	@RequestMapping(path = "/time/now", method = RequestMethod.GET)
 	@ResponseBody
 	public SeckillResult<Long> getServerTime(){

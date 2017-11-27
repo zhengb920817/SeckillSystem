@@ -2,7 +2,7 @@ package org.seckill.entity;
 
 import java.util.Date;
 
-public class SecKill {
+public class SecKill{
 	//秒杀id
 	private long seckillId;
 	//秒杀名称
